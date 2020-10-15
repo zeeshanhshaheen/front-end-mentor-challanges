@@ -1,0 +1,118 @@
+:root {
+    $Red: hsl(0, 78%, 62%) $Cyan: hsl(180, 62%, 55%) $Orange: hsl(34, 97%, 64%) $Blue: hsl(212, 86%, 64%) $VeryDarkBlue: hsl(234, 12%, 34%) $GrayishBlue: hsl(229, 6%, 66%) $VeryLightGray: hsl(0, 0%, 98%)
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    min-height: 100vh;
+    padding-top: 85px;
+}
+
+main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+main span {
+    display: block;
+    font-weight: 600;
+}
+
+p {
+    max-width: calc(1440px/2);
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(229, 6%, 66%);
+}
+
+section {
+    margin-top: -250px;
+}
+
+section:nth-child(1) {
+    transform: translateY(50%);
+}
+
+section:nth-child(3) {
+    transform: translateY(50%);
+}
+
+article:nth-child(1) {
+    transform: translateY(50%);
+    border-top-color: cyan;
+}
+
+article:nth-child(4) {
+    border-top-color: orange;
+}
+
+article:nth-child(3) {
+    transform: translateY(50%);
+    border-top-color: lightskyblue
+}
+
+article {
+    width: 25%;
+    display: inline-block;
+    margin: 15PX;
+    height: 250px;
+    background: white;
+    position: relative;
+    text-align: left;
+    padding: 15px;
+    color: hsl(229, 6%, 66%);
+    padding-right: 30px;
+    border-top: 5px solid red;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px lightgrey;
+}
+
+article img {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+h2 {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 5px;
+}
+
+.foo {
+    margin-bottom: 150%;
+}
+
+@media(max-width: 768px) {
+
+    body {
+        padding: 30px;
+    }
+
+    article {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    article:nth-child(1) {
+        transform: translateY(0);
+    }
+
+    article:nth-child(3) {
+        transform: translateY(0);
+    }
+}
