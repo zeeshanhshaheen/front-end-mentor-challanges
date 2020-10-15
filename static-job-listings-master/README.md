@@ -2,6 +2,9 @@
 
 ![Design preview for the Job Listings coding challenge](./design/desktop-preview.jpg)
 
+## Demo:
+[Job Listing Coding Challenge](https://job-listing-challange.netlify.app/) 
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
